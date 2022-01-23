@@ -1,0 +1,66 @@
+
+
+
+
+body{
+	background-image: url('backg.jpg');
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+@keyframes schrink {
+  0%   {
+	  
+	  opacity: 0;
+	  transform: scale(1) translate(0,0);
+	  
+  }
+  25%  {
+	  
+	  opacity: 0;
+	  
+  }
+  50%  {
+	  
+	  opacity: 99;
+	  
+	  }
+  100% {
+	  
+	  opacity: 100;
+	  transform: scale(0.86) translate(-150px,0);
+	  
+	  }
+}
+#anim {
+	
+  
+  justify-content:center;
+  align-self:center;
+  height: 97vh;
+  animation-name: schrink;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  
+}
+
+#parent{
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items: center;
+width: 50vw;
+	
+}
+.form {
+	text-align:center;
+	background:red;
+	vertical-align:middle;
+	margin:auto;
+	
+	
+}

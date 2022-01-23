@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="T1.css">
+    <link rel="stylesheet" href="Sk.css">
+    <script>
+function showAlert() {
+
+  var nameValue = document.getElementById("fname").value;
+  var nazwValue = document.getElementById("lname").value;
+  alert(nameValue + " " +  nazwValue + "\nDziękujemy za zgłoszenie!" );
+
+
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+	<nav>
+		<img src="" style="width:120px; height:auto; cursor:pointer">
+		<ul>
+			<li><a href="TI.html">Strona Główna</a></li>
+			<li><a href="shopkart.html">Shop</a></li>
+			<li><a href="">Log in</a></li>
+		</ul>
+	</nav>
+    <div class = "form">
+    <form>
+        <label>DOŁĄCZ DO ZESPOLU</label><br>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" required ><br>
+    <label>Płeć:</label><br>
+    <input type="radio" id="html" name="fav_language" value="Male">
+  <label>Male</label><br>
+  <input type="radio" id="css" name="fav_language" value="Female" required>
+  <label >Female</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="Other">
+  <label >Other</label> <br>
+        <label for="fname">First name:</label><br>
+   <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+       required><br>
+
+        <input type="submit" value="Submit" onclick="showAlert()">
+</form>
+        </div>
+
+</div>
+</body>
+</html>
