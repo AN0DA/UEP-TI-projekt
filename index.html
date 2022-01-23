@@ -2,20 +2,43 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles/T1.css">
+    <link rel="stylesheet" href="style/T1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Almanach Prawny </title>
 
+    <script src="script/login.js"></script>
 </head>
 
-<body>
+<body onload="isLoggedIn()">
+
+
+    <div class="overlay">
+        <div class="login">
+            <div class="header">
+                <h1>Login</h1>
+                <i class="fas fa-times" onclick="toggleLogin()"></i>
+            </div>
+            <div class="body">
+                <form action="#" class="form">
+                    <input id="username" type="text" placeholder="username" />
+                    <input id="password" type="password" placeholder="Password" />
+                </form>
+            </div>
+            <div class="footer">
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <nav>
 
             <ul>
+                <li class="auth"><a href="content/secret.html">Secret</a></li>
                 <li><a href="content/shopkart.html">Shop</a></li>
                 <li><a href="content/Formularz.html">Contact us</a></li>
-                <li><a href="">Log in</a></li>
+                <li id="li_login"><a id="login" onclick="toggleLogin()">Log in</a></li>
+                <li class="auth"><a id="logout" onclick="logout()">Log out</a></li>
             </ul>
         </nav>
         <div class="text_front">
@@ -23,8 +46,6 @@
             <h2>PRAWNY</h2>
         </div>
     </div>
-
-
 </body>
 
 </html>

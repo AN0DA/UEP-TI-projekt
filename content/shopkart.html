@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Almanach Prawny</title>
-    <link rel="stylesheet" href="../styles/T1.css">
+    <link rel="stylesheet" href="../style/T1.css">
+    <script src="../script/login.js"></script>
     <script>
         function obliczsume() {
 
@@ -22,14 +23,16 @@
     </script>
 </head>
 
-<body>
+<body onload="isLoggedIn()">
     <div class="">
         <nav>
             <img src="" style="width:120px; height:auto; cursor:pointer">
             <ul>
+                <li class="auth"><a href="secret.html">Secret</a></li>
                 <li><a href="../index.html">Strona Główna</a></li>
                 <li><a href="Formularz.html">Contact us</a></li>
-                <li><a href="">Log in</a></li>
+                <li id="li_login"><a id="login" onclick="toggleLogin()">Log in</a></li>
+                <li class="auth"><a id="logout" onclick="logout()">Log out</a></li>
             </ul>
         </nav>
         <div class="s-c c-p">
@@ -64,7 +67,7 @@
                         <div class="c-i">
                             <img src="../assets/grzyby.jpg" style="height: 100px ">
                             <div>
-                                <p>Kubek</p>
+                                <p>Skarpety</p>
                                 <small>Cena: 30zł</small>
                                 <br>
                                 <a href="">Remove</a>
@@ -84,7 +87,7 @@
                         <div class="c-i">
                             <img src="../assets/kubek.jpg" style="height: 100px ">
                             <div>
-                                <p>Skarpety</p>
+                                <p>Kubek</p>
                                 <small>Cena: 55zł</small>
                                 <br>
                                 <a href="">Remove</a>
