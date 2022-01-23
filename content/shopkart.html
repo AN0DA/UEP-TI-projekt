@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Almanach Prawny</title>
+    <link rel="stylesheet" href="../styles/T1.css">
+    <script>
+        function obliczsume() {
+
+            var kub = document.getElementById("number_kubek").value;
+            var sk = document.getElementById("number_skarpety").value;
+            var kosz = document.getElementById("number_kosz").value;
+            var suma = parseInt(kub) * 30 + parseInt(sk) * 55 + parseInt(kosz) * 50 + 15;
+            suma = suma.toString();
+            document.getElementById("zz").innerHTML = suma + "zł";
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="">
+        <nav>
+            <img src="" style="width:120px; height:auto; cursor:pointer">
+            <ul>
+                <li><a href="../index.html">Strona Główna</a></li>
+                <li><a href="Formularz.html">Contact us</a></li>
+                <li><a href="">Log in</a></li>
+            </ul>
+        </nav>
+        <div class="s-c c-p">
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Ilość</th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="c-i">
+                            <img src="../assets/koszulka.jpg" style="height: 100px ">
+                            <div>
+                                <p>T-shirt</p>
+                                <small>Cena: 50zł</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+
+
+
+                    </td>
+                    <td><input type="number" id="number_kosz" value="0"> </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div class="c-i">
+                            <img src="../assets/grzyby.jpg" style="height: 100px ">
+                            <div>
+                                <p>Kubek</p>
+                                <small>Cena: 30zł</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+
+
+
+                    </td>
+                    <td><input type="number" id="number_kubek" value="0"> </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div class="c-i">
+                            <img src="../assets/kubek.jpg" style="height: 100px ">
+                            <div>
+                                <p>Skarpety</p>
+                                <small>Cena: 55zł</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+
+
+
+                    </td>
+                    <td><input type="number" id="number_skarpety" value="0"> </td>
+
+                </tr>
+            </table>
+
+
+
+
+            <div class="total">
+
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dostawa
+                        </td>
+                        <td>15zł</td>
+                    </tr>
+                    <tr>
+                        <td>Suma
+                        </td>
+                        <td><label id="zz"></label></td>
+                        <td><button style="height: 40px; width: 100px; background: orange" onclick="obliczsume()">Suma</button></td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
